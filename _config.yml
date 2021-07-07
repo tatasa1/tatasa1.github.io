@@ -101,9 +101,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "SungJun Kang"
+  name             : "CAVI, SungJun Kang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "CAVI, Junior Developer"
+  bio              : "Junior Developer"
   location         : "Seoul, Korea"
   email            :
   links:
