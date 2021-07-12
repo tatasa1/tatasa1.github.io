@@ -1,0 +1,9 @@
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\bin\Debug\CAVI's_Sapce.exe.config
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\bin\Debug\CAVI's_Sapce.exe
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\bin\Debug\CAVI's_Sapce.pdb
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\obj\Debug\CAVI's_Sapce.csprojAssemblyReference.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\obj\Debug\CAVI_s_Sapce.Properties.Resources.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\obj\Debug\CAVI's_Sapce.csproj.GenerateResource.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\obj\Debug\CAVI's_Sapce.csproj.CoreCompileInputs.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\obj\Debug\CAVI's_Sapce.exe
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\CAVI's_Sapce\obj\Debug\CAVI's_Sapce.pdb
