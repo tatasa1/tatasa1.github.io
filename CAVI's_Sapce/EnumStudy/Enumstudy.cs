@@ -46,6 +46,5 @@ namespace EnumStudy
             }
             this.Cursor = Cursors.Default;
         }
-
     }
 }
