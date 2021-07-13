@@ -103,12 +103,7 @@ analytics:
 author:
   name             : "CAVI, SungJun Kang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : |
-  Junior Developer
-  
-  2018 - 2020 KT
-  
-  2020 - now  View-On
+  bio              : "Junior Developer"
   location         : "Seoul, Korea"
   email            :
   links:
