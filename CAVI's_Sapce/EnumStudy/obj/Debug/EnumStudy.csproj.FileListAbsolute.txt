@@ -1,0 +1,10 @@
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\EnumStudy.exe.config
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\EnumStudy.exe
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\EnumStudy.pdb
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.csprojAssemblyReference.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.Properties.Resources.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.csproj.GenerateResource.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.csproj.CoreCompileInputs.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.exe
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.pdb
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.Enumstudy.resources
