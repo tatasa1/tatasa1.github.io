@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1267
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAVI's_Sapce", "CAVI's_Sapce\CAVI's_Sapce.csproj", "{6F1C0646-7770-4AFA-845B-6B705883C871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStudy", "EnumStudy\EnumStudy.csproj", "{DF326F7A-40C3-47C5-849F-44BB829921A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCSharp", "EnumStudy\StudyCSharp.csproj", "{DF326F7A-40C3-47C5-849F-44BB829921A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

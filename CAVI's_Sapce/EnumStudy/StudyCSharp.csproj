@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyStudy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyStudy.Designer.cs">
+      <DependentUpon>PropertyStudy.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Enumstudy.resx">
       <DependentUpon>Enumstudy.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +72,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PropertyStudy.resx">
+      <DependentUpon>PropertyStudy.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
