@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTwoImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTwoImage.Designer.cs">
+      <DependentUpon>AddTwoImage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Enumstudy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,15 @@
     <Compile Include="PropertyStudy.Designer.cs">
       <DependentUpon>PropertyStudy.cs</DependentUpon>
     </Compile>
+    <Compile Include="RotateImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RotateImage.Designer.cs">
+      <DependentUpon>RotateImage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddTwoImage.resx">
+      <DependentUpon>AddTwoImage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Enumstudy.resx">
       <DependentUpon>Enumstudy.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="PropertyStudy.resx">
       <DependentUpon>PropertyStudy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RotateImage.resx">
+      <DependentUpon>RotateImage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
