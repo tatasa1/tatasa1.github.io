@@ -11,3 +11,4 @@ C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.PropertyStudy.resources
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.AddTwoImage.resources
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.RotateImage.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.ConvertByteArrayToBMP.resources

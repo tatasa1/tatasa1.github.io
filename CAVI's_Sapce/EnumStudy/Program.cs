@@ -16,7 +16,7 @@ namespace EnumStudy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RotateImage());
+            Application.Run(new AddTwoImage());
         }
     }
 }

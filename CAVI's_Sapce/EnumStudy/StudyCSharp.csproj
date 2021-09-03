@@ -52,6 +52,12 @@
     <Compile Include="AddTwoImage.Designer.cs">
       <DependentUpon>AddTwoImage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConvertByteArrayToBMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertByteArrayToBMP.Designer.cs">
+      <DependentUpon>ConvertByteArrayToBMP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Enumstudy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="AddTwoImage.resx">
       <DependentUpon>AddTwoImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertByteArrayToBMP.resx">
+      <DependentUpon>ConvertByteArrayToBMP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Enumstudy.resx">
       <DependentUpon>Enumstudy.cs</DependentUpon>

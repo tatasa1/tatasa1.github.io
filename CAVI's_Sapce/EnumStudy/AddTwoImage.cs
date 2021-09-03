@@ -42,6 +42,7 @@ namespace EnumStudy
         private void btnRun_Click(object sender, EventArgs e)
         {
             int ChangeOffsetRight;
+            int mergeImageWidth=1152, mergeImageHeight=650;
             if (Int32.TryParse(tBoxRightOffset.Text,out ChangeOffsetRight))
             {
                 offsetRight = ChangeOffsetRight;
@@ -49,10 +50,10 @@ namespace EnumStudy
             OpenImage(filePath, 0);
             OpenImage(filePath, 1);
             
-            Bitmap addPic = new Bitmap(5040, 4096);
+            Bitmap addPic = new Bitmap(mergeImageWidth, mergeImageHeight);
             Graphics addGraphics = Graphics.FromImage(addPic);
             addGraphics.DrawImage(pBox1.Image, 0, 0);
-            addGraphics.DrawImage(pBox2.Image, 2520, 0+ offsetRight);
+            addGraphics.DrawImage(pBox2.Image, mergeImageWidth/2, 0+ offsetRight);
             pBox3.Image = addPic;
             addPic.Save("C:\\Users\\SJ\\Desktop\\test_0818\\result_Image\\AddImage.bmp", ImageFormat.Bmp);
         }
