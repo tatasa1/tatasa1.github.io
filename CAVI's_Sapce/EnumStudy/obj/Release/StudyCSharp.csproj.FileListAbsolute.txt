@@ -1,0 +1,15 @@
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Release\EnumStudy.exe.config
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Release\EnumStudy.exe
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Release\EnumStudy.pdb
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\StudyCSharp.csprojAssemblyReference.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.AddTwoImage.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.ConvertByteArrayToBMP.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.Enumstudy.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.Properties.Resources.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.PropertyStudy.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.ResizeImage.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.RotateImage.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\StudyCSharp.csproj.GenerateResource.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\StudyCSharp.csproj.CoreCompileInputs.cache
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.exe
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Release\EnumStudy.pdb

@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using Cognex.VisionPro;
+using Cognex.VisionPro.ToolBlock;
 
 namespace EnumStudy
 {
@@ -15,7 +18,16 @@ namespace EnumStudy
     {
         string filePath;
         string savePath;
-
+        static int mergeImageWidth = 11000, mergeImageHeight = 3650, offsetRightX=0, offsetRightY=0;
+        static Bitmap addPic = new Bitmap(mergeImageWidth, mergeImageHeight);  // 합친 이미지 넣을 공간
+        Graphics addGraphics = Graphics.FromImage(addPic);
+        Rectangle drL = new Rectangle(0, 0, mergeImageWidth / 2, mergeImageHeight);
+        Rectangle srL = new Rectangle(0, 0, mergeImageWidth / 2, mergeImageHeight);
+        Rectangle srR = new Rectangle(offsetRightX, 0, mergeImageWidth / 2, mergeImageHeight);
+        Rectangle drR = new Rectangle(mergeImageWidth / 2, 0 + offsetRightY, mergeImageWidth / 2, mergeImageHeight);
+        Stopwatch stopWatch = new Stopwatch();
+        CogToolBlock mainRecipe = (CogToolBlock)CogSerializer.LoadObjectFromFile(@"C:\Users\SJ\Desktop\MOBIS_MEA\MEA_Test.vpp");
+        ICogImage cogImage;
         public AddTwoImage()
         {
             InitializeComponent();
@@ -31,31 +43,55 @@ namespace EnumStudy
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (this.folderBrowserDialog2.ShowDialog() == DialogResult.OK)
-            {
-                savePath = this.folderBrowserDialog2.SelectedPath;
-            }
+            //if (this.folderBrowserDialog2.ShowDialog() == DialogResult.OK)
+            //{
+            //    savePath = this.folderBrowserDialog2.SelectedPath;
+            //}
+            
+            cogImage = new CogImage8Grey(addPic);
+            mainRecipe.Inputs[0].Value = cogImage;
+            stopWatch.Start();
+            mainRecipe.Run();
+            stopWatch.Stop();
+            lblVppTime.Text = (stopWatch.ElapsedMilliseconds).ToString() + " ms";
+            
         }
 
-        int offsetRight = 0;
 
         private void btnRun_Click(object sender, EventArgs e)
         {
-            int ChangeOffsetRight;
-            int mergeImageWidth=1152, mergeImageHeight=650;
-            if (Int32.TryParse(tBoxRightOffset.Text,out ChangeOffsetRight))
+            
+            int offsetRightY=0 , offsetRightX=0;
+            int mergeImageWidth=11000, mergeImageHeight=3650;
+            int parseOffset;
+
+            if (Int32.TryParse(tBoxRightOffsetX.Text, out parseOffset))
             {
-                offsetRight = ChangeOffsetRight;
+                offsetRightX = parseOffset;
             }
+            if (Int32.TryParse(tBoxRightOffsetY.Text,out parseOffset))
+            {
+                offsetRightY = parseOffset;
+            }
+
+            stopWatch.Start();
             OpenImage(filePath, 0);
             OpenImage(filePath, 1);
-            
-            Bitmap addPic = new Bitmap(mergeImageWidth, mergeImageHeight);
-            Graphics addGraphics = Graphics.FromImage(addPic);
-            addGraphics.DrawImage(pBox1.Image, 0, 0);
-            addGraphics.DrawImage(pBox2.Image, mergeImageWidth/2, 0+ offsetRight);
+            stopWatch.Stop();
+            lblOpenTime.Text=(stopWatch.ElapsedMilliseconds).ToString()+" ms";
+
+            stopWatch.Start();
+            addGraphics.DrawImage(pBox1.Image, drL,srL,GraphicsUnit.Pixel);   // 왼쪽 이미지 그리기
+            //addGraphics.DrawImage(pBox2.Image, mergeImageWidth/2+ offsetRightX, 0+ offsetRightY);
+            addGraphics.DrawImage(pBox2.Image, drR, srR, GraphicsUnit.Pixel);
             pBox3.Image = addPic;
-            addPic.Save("C:\\Users\\SJ\\Desktop\\test_0818\\result_Image\\AddImage.bmp", ImageFormat.Bmp);
+            stopWatch.Stop();
+            lblMergeTime.Text= (stopWatch.ElapsedMilliseconds).ToString() + " ms";
+
+            stopWatch.Start();
+            addPic.Save("D:\\MEA_Test\\AddImage.jpg", ImageFormat.Jpeg);
+            stopWatch.Stop();
+            lblSavetime.Text = (stopWatch.ElapsedMilliseconds).ToString() + " ms";
         }
 
 
@@ -73,6 +109,9 @@ namespace EnumStudy
             }
         }
 
-       
+        private void AddTwoImage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
