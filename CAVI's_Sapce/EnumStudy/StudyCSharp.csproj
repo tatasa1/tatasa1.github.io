@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -310,6 +311,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -319,6 +324,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTwoImage.cs">
@@ -327,11 +333,18 @@
     <Compile Include="AddTwoImage.Designer.cs">
       <DependentUpon>AddTwoImage.cs</DependentUpon>
     </Compile>
+    <Compile Include="CogHelper.cs" />
     <Compile Include="ConvertByteArrayToBMP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConvertByteArrayToBMP.Designer.cs">
       <DependentUpon>ConvertByteArrayToBMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayWidthHeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayWidthHeight.Designer.cs">
+      <DependentUpon>DisplayWidthHeight.cs</DependentUpon>
     </Compile>
     <Compile Include="Enumstudy.cs">
       <SubType>Form</SubType>
@@ -365,6 +378,9 @@
     <EmbeddedResource Include="ConvertByteArrayToBMP.resx">
       <DependentUpon>ConvertByteArrayToBMP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DisplayWidthHeight.resx">
+      <DependentUpon>DisplayWidthHeight.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Enumstudy.resx">
       <DependentUpon>Enumstudy.cs</DependentUpon>
     </EmbeddedResource>
@@ -386,6 +402,7 @@
     <EmbeddedResource Include="RotateImage.resx">
       <DependentUpon>RotateImage.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

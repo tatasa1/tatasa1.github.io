@@ -133,3 +133,5 @@ C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\Cognex.VisionPro3D.Graphic.xml
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\Cognex.VisionPro3D.Display.Controls.xml
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\StudyCSharp.csproj.CopyComplete
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\obj\Debug\EnumStudy.DisplayWidthHeight.resources
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\CAVI's_Sapce\EnumStudy\bin\Debug\System.Drawing.Primitives.dll

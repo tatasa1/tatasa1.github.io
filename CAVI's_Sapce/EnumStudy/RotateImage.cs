@@ -14,7 +14,7 @@ namespace EnumStudy
     public partial class RotateImage : Form
     {
         string fileName;
-        string savePath;
+        //string savePath;
         Bitmap bmap;
 
         public RotateImage()

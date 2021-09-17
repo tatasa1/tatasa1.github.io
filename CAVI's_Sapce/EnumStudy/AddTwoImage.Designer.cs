@@ -48,6 +48,7 @@
             this.lblSavetime = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblVppTime = new System.Windows.Forms.Label();
+            this.lblVppTime2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox3)).BeginInit();
@@ -58,7 +59,7 @@
             this.pBox1.Location = new System.Drawing.Point(13, 13);
             this.pBox1.Name = "pBox1";
             this.pBox1.Size = new System.Drawing.Size(185, 164);
-            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBox1.TabIndex = 0;
             this.pBox1.TabStop = false;
             // 
@@ -67,7 +68,7 @@
             this.pBox2.Location = new System.Drawing.Point(223, 13);
             this.pBox2.Name = "pBox2";
             this.pBox2.Size = new System.Drawing.Size(183, 164);
-            this.pBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBox2.TabIndex = 1;
             this.pBox2.TabStop = false;
             // 
@@ -214,11 +215,21 @@
             this.lblVppTime.TabIndex = 17;
             this.lblVppTime.Text = "**ms";
             // 
+            // lblVppTime2
+            // 
+            this.lblVppTime2.AutoSize = true;
+            this.lblVppTime2.Location = new System.Drawing.Point(516, 468);
+            this.lblVppTime2.Name = "lblVppTime2";
+            this.lblVppTime2.Size = new System.Drawing.Size(35, 12);
+            this.lblVppTime2.TabIndex = 18;
+            this.lblVppTime2.Text = "**ms";
+            // 
             // AddTwoImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 536);
+            this.Controls.Add(this.lblVppTime2);
             this.Controls.Add(this.lblVppTime);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblSavetime);
@@ -270,5 +281,6 @@
         private System.Windows.Forms.Label lblSavetime;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblVppTime;
+        private System.Windows.Forms.Label lblVppTime2;
     }
 }
