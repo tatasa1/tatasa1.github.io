@@ -26,9 +26,12 @@ namespace EnumStudy
 
         CogImageFileTool CogImageFile = new CogImageFileTool();
         CogImageConvertTool CogImageConvert = new CogImageConvertTool();
-        CogBlobTool CgBlob = new CogBlobTool();
+        CogBlobTool CgBlob,CgCopyBlob;
         CogCreateGraphicLabelTool CogCreateGraphicLabelTool = new CogCreateGraphicLabelTool();
         CogRectangleAffine cogRectangleAffine = new CogRectangleAffine();
+
+
+
         ICogImage cogImage;
         ICogRecord cogRecord,cogRecordLabel;
         ICogRegion Region;
@@ -42,11 +45,39 @@ namespace EnumStudy
 
         private void btnRegionSave_Click(object sender, EventArgs e)
         {
-            cogDisplay1.Image = null;
+            cogDisplay1.InteractiveGraphics.Clear();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            
+            CgBlob = new CogBlobTool();
+            // 파일불러오는 Tool
+            CogImageFile.Operator.Open(openImagePath, CogImageFileModeConstants.Read);
+            CogImageFile.Run();
+            // 8bitGrey로 이미지 변환 Tool
+            CogImageConvert.InputImage = CogImageFile.OutputImage;
+            CogImageConvert.Run();
+            cogImage = CogImageConvert.OutputImage;
+            // 메인화면에 이미지 띄우기
+            cogDisplay1.Image = cogImage;
+            // BlobTool에 params 넣기
+            CgBlob.InputImage = cogImage;
+            CgBlob.Region = cogRectangleAffine; //ROI설정
+            //CgCopyBlob = CgBlob;
+            cogBlobEditV21.Subject = CgBlob;
+        }
+
+        private void DisplayWidthHeight_Load(object sender, EventArgs e)
+        {
+            cogRectangleAffine.Interactive = true;
+            cogRectangleAffine.GraphicDOFEnable = CogRectangleAffineDOFConstants.Position | CogRectangleAffineDOFConstants.Size;
         }
 
         private void btnRun_Click(object sender, EventArgs e)
         {
+            cogDisplay1.InteractiveGraphics.Clear();
+
             double principalWidth = 0, principalHeight = 0, blobLabelPointX = 0, blobLabelPointY = 0;
             double blobWidth=0, blobHeight=0 , blobCenterX=0, blobCenterY;
            
@@ -57,9 +88,6 @@ namespace EnumStudy
             cogImage = CogImageConvert.OutputImage;
             cogDisplay1.Image = cogImage;
             CgBlob.InputImage = cogImage;
-
-            cogRectangleAffine.Interactive = true;
-            cogRectangleAffine.GraphicDOFEnable = CogRectangleAffineDOFConstants.Position | CogRectangleAffineDOFConstants.Size;
 
             CgBlob.Region = cogRectangleAffine;
 
@@ -92,7 +120,6 @@ namespace EnumStudy
 
                     cogRecordLabel = CogCreateGraphicLabelTool.CreateLastRunRecord();
                     CogHelper.SetGraphics(cogDisplay1, cogRecordLabel);
-
                 }
             }
 
