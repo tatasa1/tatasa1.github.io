@@ -16,9 +16,9 @@ using OpenCvSharp;
 
 namespace Derrortect
 {
-    public partial class frmMain : Form
+    public partial class frmRTMeasurement : Form
     {
-        public static frmMain _frmGrabber;
+        public static frmRTMeasurement _frmGrabber;
         private Thread tGcProcess;
         private Thread tProcess;
         private VideoCapture capture_1;
@@ -31,7 +31,7 @@ namespace Derrortect
         public CogBlobResults cogBlobResult = new CogBlobResults();
         
 
-        public frmMain()
+        public frmRTMeasurement()
         {
             _frmGrabber = this;
             InitializeComponent();

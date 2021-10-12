@@ -48,7 +48,6 @@ C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\C
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\Cognex.VisionPro.ToolGroup.xml
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\Cognex.VisionPro3D.xml
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\obj\Debug\Derrortect.csprojAssemblyReference.cache
-C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\obj\Debug\Derrortect.frmMain.resources
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\obj\Debug\Derrortect.Properties.Resources.resources
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\obj\Debug\Derrortect.csproj.GenerateResource.cache
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\obj\Debug\Derrortect.csproj.CoreCompileInputs.cache
@@ -75,3 +74,4 @@ C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\C
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\Cognex.VisionPro.PMAlign.xml
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\Cognex.VisionPro.Inspection.xml
 C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\bin\Debug\Cognex.VisionPro.Database.xml
+C:\Users\SJ\Documents\GitHub\tatasa1.github.io\Derrortect\Derrortect\obj\Debug\Derrortect.frmRTMeasurement.resources

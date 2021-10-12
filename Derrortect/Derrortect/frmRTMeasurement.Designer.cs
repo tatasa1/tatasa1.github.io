@@ -1,6 +1,6 @@
 ﻿namespace Derrortect
 {
-    partial class frmMain
+    partial class frmRTMeasurement
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRTMeasurement));
             this.btnGrab = new System.Windows.Forms.Button();
             this._cogDisplayGrab = new Cognex.VisionPro.Display.CogDisplay();
             this.btnRecipeTest = new System.Windows.Forms.Button();
